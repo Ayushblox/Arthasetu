@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1f3a'/%3E%3Cpolygon points='9,50 31,12 31,50' fill='%23dfe6f3'/%3E%3Cpolygon points='31,12 53,50 31,50' fill='%23d4a62a'/%3E%3Cpath d='M25 50V42A6 6 0 0 1 37 42V50Z' fill='%230f1f3a'/%3E%3C/svg%3E">
+<title>ArthaSetu: A Bridge from Nepal's Business Gaps to Growth</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=IBM+Plex+Sans:wght@400;500&family=Fraunces:wght@600;800&family=Space+Grotesk:wght@500;700&family=Noto+Sans+Devanagari:wght@400;500;800&display=swap">
+<style>
+:root{--bg:#f4f7fa;--card:#fff;--ink:#12203a;--mute:#56647c;--line:#d6dde8;--red:#c8102e;--blue:#1d4e89;--ok:#1f7a4d;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1829;--card:#172338;--ink:#eaf0fa;--mute:#9fb0cc;--line:#2b3a56;--red:#ff5d73;--blue:#7db4ff;--ok:#5fd39a}}
+:root[data-theme="dark"]{--bg:#0f1829;--card:#172338;--ink:#eaf0fa;--mute:#9fb0cc;--line:#2b3a56;--red:#ff5d73;--blue:#7db4ff;--ok:#5fd39a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,7vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:500}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5;display:flex;gap:1rem;padding:.6rem 1.2rem;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--red)}
+section{max-width:1000px;margin:0 auto;padding:3.5rem 1.2rem}
+.hero{padding-bottom:0}
+.hero p{max-width:60ch;color:var(--mute);font-size:1.1rem}
+.ridge{display:block;width:100%;height:auto;margin-top:1.5rem}
+.ridge .fill{fill:var(--blue);opacity:.14}.ridge .line{fill:none;stroke:var(--blue);stroke-width:2.5}
+.ridge .dot{fill:var(--red)}.ridge text{fill:var(--mute);font:12px "IBM Plex Sans",sans-serif}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-top:1rem}
+.fact{border-left:4px solid var(--red);padding:.3rem 0 .3rem 1rem}
+.fact b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem;display:block}
+.fact span{color:var(--mute);font-size:.92rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+button,select,input{font:inherit;color:inherit}
+.tab{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.gap{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:.8rem}
+.gap summary{cursor:pointer;padding:1rem 1.2rem;font-weight:500;display:flex;justify-content:space-between;gap:1rem}
+.gap summary em{font-style:normal;color:var(--mute);font-size:.85rem}
+.gap .body{padding:0 1.2rem 1.2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.body h4{margin:0 0 .3rem;font-size:.95rem}
+.why h4{color:var(--red)}.fix h4{color:var(--ok)}
+.body ul{margin:0;padding-left:1.1rem}
+.lab{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.3rem}
+label{display:block;margin:.7rem 0 .2rem;font-size:.92rem;color:var(--mute)}
+input,select{width:100%;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.btn{margin-top:1rem;background:var(--blue);color:#fff;border:0;border-radius:8px;padding:.6rem 1.2rem;cursor:pointer;font-weight:500}
+:root[data-theme="dark"] .btn{color:#0f1829}
+.out{margin-top:1rem;padding:.9rem;border-radius:8px;background:var(--bg);border:1px dashed var(--line);min-height:3rem}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:.4rem 0}
+.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .5s}
+.road{list-style:none;padding:0;margin:0;border-left:3px solid var(--line)}
+.road li{padding:0 0 1.4rem 1.2rem;position:relative}
+.road li::before{content:"";position:absolute;left:-9px;top:.45rem;width:15px;height:15px;border-radius:50%;background:var(--red)}
+.road b{font-family:"Bricolage Grotesque",sans-serif}
+footer{max-width:1000px;margin:0 auto;padding:2rem 1.2rem 3rem;color:var(--mute);font-size:.88rem;border-top:1px solid var(--line)}
+.sm{font-size:.85rem;color:var(--mute)}
+.sec{display:grid;grid-template-columns:110px 1fr 48px;gap:.7rem;align-items:center;margin:.6rem 0}
+.sec .bar{height:16px;margin:0}.sec .bar i{background:var(--blue)}
+.opps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.5rem}
+.opp{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:10px;padding:1rem}
+.opp p{margin:.3rem 0 0;color:var(--mute);font-size:.92rem}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem;margin:.6rem .4rem 0 0;cursor:pointer;font-size:.85rem}
+nav{align-items:center}.logo{font-family:"Bricolage Grotesque",sans-serif;color:var(--red);font-size:1.1rem}
+nav a[aria-current]{color:var(--red);border-bottom:2px solid var(--red)}
+.ctl{margin-left:auto;display:flex;gap:.4rem;align-items:center}
+.sw{width:22px;height:22px;border-radius:50%;border:2px solid var(--card);outline:1px solid var(--line);cursor:pointer;padding:0}
+.chk{display:flex;gap:.6rem;align-items:flex-start;margin:.55rem 0;font-size:.95rem}.chk input{width:auto;margin-top:.3rem}
+.chk small{display:block;color:var(--mute)}
+.cta{display:inline-block;text-decoration:none;margin:.5rem .5rem 0 0}
+.res li{margin:.4rem 0}
+.hero{background:linear-gradient(180deg,color-mix(in srgb,var(--red) 12%,transparent),transparent);border-radius:0 0 28px 28px}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--red);margin-top:.4rem;border-radius:2px}
+#mood{width:auto;padding:.3rem .5rem}
+.row{display:flex;justify-content:space-between;gap:.5rem;padding:.35rem 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.row button{background:none;border:0;color:var(--red);cursor:pointer}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.qb{display:block;width:100%;text-align:left;margin:.4rem 0;padding:.5rem .8rem;background:var(--bg);border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.good{border-color:var(--ok)!important}.bad{border-color:var(--red)!important}
+@media print{nav,footer,.btn,.cta{display:none!important}.panel{border:0}}
+html[lang=ne] body,html[lang=ne] h1,html[lang=ne] h2,html[lang=ne] h3{font-family:"Noto Sans Devanagari","IBM Plex Sans",sans-serif}
+.hero{background:var(--hero,linear-gradient(180deg,color-mix(in srgb,var(--red) 12%,transparent),transparent))}
+h1,h2,h3,.logo,.fact b,.road b{font-family:var(--hf,"Bricolage Grotesque",system-ui,sans-serif)}
+.panel,.opp,.gap{border-radius:var(--rad,12px)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;margin-top:1.2rem}
+.cols h3{margin-bottom:.3rem}.cols ul{margin:0;padding-left:1.1rem}
+@media(min-width:900px){section,footer{max-width:1180px}.hero{padding-top:4.5rem}h1{font-size:4.6rem;max-width:16ch}
+nav{padding:.8rem max(2rem,calc((100vw - 1180px)/2));gap:1.6rem}.lab{grid-template-columns:repeat(2,1fr)}
+.gap .body{grid-template-columns:1fr 1fr}.facts{grid-template-columns:repeat(4,1fr)}.opps{grid-template-columns:repeat(4,1fr)}
+.hero p{font-size:1.25rem}}
+@media(min-width:1400px){body{font-size:17px}}
+@media(hover:hover){.opp,.panel{transition:box-shadow .2s,transform .2s}.opp:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.14)}}
+@media(hover:none){.pc{display:none}}
+.logo{display:inline-flex;align-items:center;gap:.5rem}.herologo{display:flex;align-items:center;gap:1rem;margin-bottom:1.3rem}.herologo b{font-family:var(--hf,"Bricolage Grotesque",sans-serif);font-size:2rem;color:var(--red);display:block;line-height:1.1}.herologo span{color:var(--mute);font-size:.95rem}
+.logo b,.herologo b{font-family:"Fraunces",Georgia,serif;font-weight:800;letter-spacing:.01em;color:var(--ink)}
+.herologo b{font-size:2.5rem}.herologo>div{border-left:2px solid #c9a227;padding-left:1rem}
+.herologo span{display:block;margin-top:.3rem;letter-spacing:.02em}
+.logo svg,.herologo svg{border-radius:12px;box-shadow:0 2px 8px rgba(18,35,63,.25)}
+nav a.logo{text-decoration:none;cursor:pointer}
+#cp{position:fixed;inset:0;background:rgba(10,16,32,.55);z-index:20;display:flex;align-items:flex-start;justify-content:center;padding:12vh 1rem 1rem}
+#cp[hidden]{display:none}
+.cpb{background:var(--card);border:1px solid var(--line);border-radius:14px;width:min(520px,100%);padding:.8rem;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+#cpl{margin-top:.5rem;max-height:50vh;overflow:auto}
+#cpl a{display:block;padding:.55rem .7rem;border-radius:8px;text-decoration:none;color:var(--ink)}
+#cpl a:hover,#cpl a.on{background:var(--bg);color:var(--red)}
+#up{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:0;background:var(--red);color:#fff;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:6}
+.tot{display:flex;justify-content:space-between;padding:.3rem 0}.tot.big{font-weight:700;border-top:2px solid var(--ink);margin-top:.3rem}
+@media print{body.pinv section:not(#inv1),body.pinv .noprint{display:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
+
+/* Desktop / Windows enhancements */
+html, body { min-width: 320px; }
+body { overflow-x: hidden; }
+@media (min-width: 901px) {
+  body { font-size: 16px; }
+  nav {
+    position: sticky;
+    top: 0;
+    min-height: 64px;
+    padding-left: max(24px, calc((100vw - 1280px) / 2));
+    padding-right: max(24px, calc((100vw - 1280px) / 2));
+    overflow: visible;
+  }
+  nav .ctl { flex-wrap: nowrap; }
+  section, footer {
+    max-width: 1280px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .hero {
+    min-height: 620px;
+    padding-top: 72px;
+  }
+  .hero .ridge { max-height: 250px; }
+  .lab { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .gap .body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  input, select { min-height: 42px; }
+  button, .btn, .tab { min-height: 40px; }
+  #cp .cpb { width: min(680px, 90vw); }
+}
+@media (min-width: 1500px) {
+  section, footer { max-width: 1400px; }
+  body { font-size: 17px; }
+  nav {
+    padding-left: max(28px, calc((100vw - 1400px) / 2));
+    padding-right: max(28px, calc((100vw - 1400px) / 2));
+  }
+}
+@media (max-width: 900px) {
+  nav { overflow-x: auto; }
+  .ctl { margin-left: 0; }
+}
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0f1f3a"/><polygon points="9,50 31,12 31,50" fill="#dfe6f3"/><polygon points="31,12 53,50 31,50" fill="#d4a62a"/><polygon points="31,12 25.6,21.5 31,19 36.4,21.5" fill="#fff"/><path d="M25 50V42A6 6 0 0 1 37 42V50Z" fill="#0f1f3a"/><path d="M6 53H58" stroke="#d4a62a" stroke-width="2" stroke-linecap="round"/><path d="M13 58H51" stroke="#d4a62a" stroke-width="1.2" stroke-linecap="round" opacity=".55"/></symbol></svg>
+<nav aria-label="Pages"><a class="logo" href="#home" aria-label="ArthaSetu, go to the home page" title="Home"><svg width="32" height="32" aria-hidden="true"><use href="#lg"/></svg><b>ArthaSetu</b></a><a href="#gaps" data-ne="कमजोरी र समाधान">Weaknesses &amp; fixes</a><a href="#tools" data-ne="व्यवसाय उपकरण">Business tools</a><a href="#start" data-ne="व्यवसाय सुरु">Start a business</a><a href="#money" data-ne="पैसा">Money</a><a href="#learn" data-ne="सिक्नुहोस्">Learn</a><a href="#plan" data-ne="योजना">Business plan</a><a href="#about">About us</a><span class="ctl"><button class="tab" id="cpo" aria-label="Search the site">Search</button><button class="sw" data-c="#c8102e" style="background:#c8102e" aria-label="Crimson accent"></button><button class="sw" data-c="#1d4e89" style="background:#1d4e89" aria-label="Blue accent"></button><button class="sw" data-c="#1f7a4d" style="background:#1f7a4d" aria-label="Green accent"></button><button class="sw" data-c="#b7791f" style="background:#b7791f" aria-label="Gold accent"></button><button class="sw" data-c="#6d28d9" style="background:#6d28d9" aria-label="Accent #6d28d9"></button><button class="sw" data-c="#0f766e" style="background:#0f766e" aria-label="Accent #0f766e"></button><button class="sw" data-c="#ea580c" style="background:#ea580c" aria-label="Accent #ea580c"></button><button class="sw" data-c="#be185d" style="background:#be185d" aria-label="Accent #be185d"></button><select id="mood" aria-label="Theme"><option value="himalaya">Himalaya</option><option value="night">Everest Night</option><option value="rhodo">Rhododendron</option><option value="terai">Terai Green</option><option value="phewa">Phewa Lake</option><option value="flags">Prayer Flags</option><option value="mustard">Mustard Field</option></select><button class="tab" id="lang">नेपाली</button></span></nav>
+
+<section class="hero" id="top">
+<div class="herologo"><svg width="96" height="96" role="img" aria-label="ArthaSetu logo: a bridge under a mountain and sun"><use href="#lg"/></svg><div><b>ArthaSetu</b><span>A bridge from Nepal's business gaps to growth</span></div></div>
+<h1>Nepal’s economy: where it is stuck, and how to move it</h1>
+<p>A plain-language look at the weak spots in Nepali business and finance, practical fixes for each, and a working prototype of how AI could help small businesses get credit.</p>
+<svg class="ridge" viewBox="0 0 800 190" role="img" aria-label="Mountain ridge drawn as a growth line, rising from today toward a target">
+<path class="fill" d="M0 190V150L70 128L130 140L200 96L260 118L340 62L400 90L470 40L540 74L610 48L690 22L800 10V190Z"/>
+<path class="line" d="M0 150L70 128L130 140L200 96L260 118L340 62L400 90L470 40L540 74L610 48L690 22L800 10"/>
+<circle class="dot" cx="470" cy="40" r="6"/><text x="400" y="26">The goal: climb, don’t stall</text>
+<text x="8" y="180">Today</text><text x="740" y="180">Target</text>
+</svg>
+<a class="btn cta" href="#tools">Try business tools</a><a class="btn cta" href="#start">Start a business</a>
+<div class="facts">
+<div class="fact"><b>Remittance-heavy</b><span>Money sent home by workers abroad is roughly a quarter of GDP.</span></div>
+<div class="fact"><b>Import-heavy</b><span>Nepal buys far more than it sells, so the trade gap is wide.</span></div>
+<div class="fact"><b>Hydropower rich</b><span>Huge potential for clean-power exports, still under-used.</span></div>
+<div class="fact"><b>Young &amp; mobile</b><span>Wallets like eSewa and Khalti show people will go digital.</span></div>
+</div>
+<p class="sm">Figures are approximate and for orientation. Check Nepal Rastra Bank and the Ministry of Finance for current numbers.</p>
+</section>
+
+<section id="gaps">
+<h2>Weaknesses and how to solve them</h2>
+<div class="tabs" id="tabs" role="group" aria-label="Filter by area"></div>
+<div id="list"></div>
+</section>
+
+<section id="home2"><h2>What do you need today?</h2>
+<div class="lab"><div class="panel"><h3>Quick finder</h3><label for="ff">Type a goal, like loan, VAT, register, save</label><input id="ff" placeholder="e.g. get a loan"><div id="fc"></div><div id="fr" class="res"></div></div>
+<div class="panel"><h3>Business health check</h3><div id="hc"></div><div class="bar"><i id="hb"></i></div><div id="ho" aria-live="polite" class="sm"></div></div></div>
+<div class="panel" style="margin-top:1.2rem"><h3>Money tip</h3><p id="tip" style="margin:.2rem 0"></p><button class="btn" id="tipb">Another tip</button></div></section>
+<section id="prov"><h2>Explore Nepal by province</h2><p class="sm">A general overview of what each province is known for.</p><div class="tabs" id="pt2"></div><div class="panel" id="pd" aria-live="polite"></div></section>
+<section id="ideas"><h2>Business idea generator</h2><div class="lab"><div class="panel"><label for="ib">Your budget</label><select id="ib"><option value="0">Under NPR 100,000</option><option value="1">NPR 100,000 to 500,000</option><option value="2">NPR 500,000 to 2 million</option><option value="3">Over NPR 2 million</option></select><label for="ii">Your interest</label><select id="ii"><option value="food">Food</option><option value="tech">Technology</option><option value="tour">Tourism</option><option value="farm">Farming</option></select><button class="btn" id="ig">Suggest an idea</button></div><div class="panel"><div class="out" id="io" aria-live="polite">Pick a budget and interest.</div><p class="sm">Budget sizes are rough. Research your local market before spending.</p></div></div></section>
+<section id="opps">
+<h2>Where the economy earns, and where it can grow</h2>
+<p class="sm">Approximate share of GDP by sector. Services dominate, while factories and farms are small relative to the jobs they carry.</p>
+<div id="sectors"></div>
+<div class="opps">
+<div class="opp"><h3>Hydropower</h3><p>Sell clean power to India and Bangladesh under long-term deals.</p></div>
+<div class="opp"><h3>Tourism</h3><p>Trekking, wellness and heritage trips, with better rural homestays and digital booking.</p></div>
+<div class="opp"><h3>IT outsourcing</h3><p>English-speaking, young talent can serve global clients from Kathmandu or Pokhara.</p></div>
+<div class="opp"><h3>Agro-processing</h3><p>Tea, coffee, honey, cardamom and herbs sold as branded, packaged goods.</p></div>
+<div class="opp"><h3>Fintech</h3><p>QR payments, micro-loans and insurance reaching people far from bank branches.</p></div>
+</div>
+</section>
+
+<section id="lab">
+<h2>AI prototype lab</h2>
+<p class="sm">Demo only. These run in your browser with simple rules that stand in for a trained model. They are not financial advice.</p>
+<div class="lab">
+<div class="panel">
+<h3>SME loan readiness scorer</h3>
+<label for="rev">Monthly sales (NPR)</label><input id="rev" type="number" value="300000" min="0">
+<label for="yrs">Years in business</label><input id="yrs" type="number" value="3" min="0">
+<label for="dig">Share of sales recorded digitally (%)</label><input id="dig" type="number" value="40" min="0" max="100">
+<label for="reg">Registered with PAN/VAT?</label><select id="reg"><option value="1">Yes</option><option value="0">No</option></select>
+<label for="debt">Existing monthly loan payments (NPR)</label><input id="debt" type="number" value="30000" min="0">
+<button class="btn" id="score">Check readiness</button>
+<div class="out" id="scoreOut" aria-live="polite">Fill in the form and press the button.</div>
+</div>
+<div class="panel">
+<h3>Loan EMI calculator</h3>
+<label for="p">Loan amount (NPR)</label><input id="p" type="number" value="1000000" min="0">
+<label for="r">Yearly interest rate (%)</label><input id="r" type="number" value="11" step="0.1" min="0">
+<label for="m">Term (months)</label><input id="m" type="number" value="36" min="1">
+<button class="btn" id="emi">Calculate</button>
+<div class="out" id="emiOut" aria-live="polite">Monthly payment appears here.</div>
+<hr style="border:0;border-top:1px solid var(--line);margin:1.2rem 0">
+<h3>Ask the money helper</h3>
+<label for="q">Type a question about saving, loans, QR, NEPSE or exports</label>
+<input id="q" type="text" placeholder="e.g. How can I get a loan for my shop?">
+<div id="chips"></div>
+<button class="btn" id="ask">Ask</button>
+<div class="out" id="askOut" aria-live="polite">Answers are pre-written examples of what a chatbot could say.</div>
+</div>
+</div>
+</section>
+
+<section id="road">
+<h2>A realistic roadmap</h2>
+<ul class="road">
+<li><b>Year 1: Fix the basics.</b> One-window business registration online, faster payments between banks, and digital invoices for small firms.</li>
+<li><b>Year 2: Open credit to small firms.</b> Use cash-flow data (wallet and QR sales) to lend, rather than only land as collateral.</li>
+<li><b>Year 3: Turn remittances into investment.</b> Diaspora bonds, savings products for returning workers, and training for those who come back.</li>
+<li><b>Year 4 and on: Export what Nepal is good at.</b> Hydropower, tourism services, IT outsourcing, herbs, tea and handicrafts, backed by trade finance.</li>
+</ul>
+</section>
+
+<section id="pay1"><h2>Digital payments you can use today</h2><div class="opps"><div class="opp"><h3>Mobile wallets</h3><p>eSewa, Khalti and IME Pay let you pay bills, top up and take customer payments from a phone.</p></div><div class="opp"><h3>Fonepay QR</h3><p>One QR code can accept payments from many banks and wallets.</p></div><div class="opp"><h3>connectIPS</h3><p>Bank-to-bank transfers and bill payments straight from your own account.</p></div><div class="opp"><h3>Mobile banking</h3><p>Most banks let you transfer money, pay and see statements on your phone.</p></div></div><p class="sm">Examples only. Compare fees and settlement times before choosing.</p>
+<div class="cols"><div class="panel"><h3>Do</h3><ul><li>Keep business and home money separate.</li><li>Issue a bill for every sale.</li><li>Reconcile your cash and wallet balance weekly.</li><li>Ask customers for feedback and repeat orders.</li></ul></div>
+<div class="panel"><h3>Don't</h3><ul><li>Borrow for daily costs without a repayment plan.</li><li>Mix personal loans into business accounts.</li><li>Skip tax registration when you pass the threshold.</li><li>Trust unknown links or calls asking for your PIN.</li></ul></div></div></section>
+<section id="journeys"><h2>Example journeys</h2><p class="sm">Illustrative stories, not real businesses.</p><div class="opps"><div class="opp"><h3>A momo cart grows up</h3><p>Starts with NPR 60,000, records sales on a notebook, then opens a small shop with a QR code and a bank loan.</p></div><div class="opp"><h3>A returnee farm</h3><p>A worker returns, joins a training, and sets up a poultry unit with savings plus a cooperative loan.</p></div><div class="opp"><h3>A homestay goes digital</h3><p>A Pokhara family lists rooms online, takes wallet payments and keeps clean records for a lender.</p></div><div class="opp"><h3>A designer finds global clients</h3><p>A freelancer in Kathmandu builds a portfolio, receives payments abroad and registers for tax.</p></div></div></section>
+<section id="cal1"><h2>Business calendar</h2><div class="panel"><div class="row"><b>Shrawan 1 (mid-July)</b><span>New fiscal year begins</span></div><div class="row"><b>Jestha 15 (late May)</b><span>Annual budget presented</span></div><div class="row"><b>Monthly</b><span>VAT filers submit returns, usually by the 25th. Confirm with the IRD.</span></div><div class="row"><b>Dashain and Tihar</b><span>Peak spending. Stock early and plan cash flow.</span></div></div></section>
+<section id="pol1"><h2>Ideas for policymakers</h2><div class="opps"><div class="opp"><h3>One-window registration</h3><p>A single online portal with tracked status for every licence.</p></div><div class="opp"><h3>Credit guarantees</h3><p>Share loan risk so banks lend to small firms.</p></div><div class="opp"><h3>Diaspora bonds</h3><p>Let migrant families invest in national projects.</p></div><div class="opp"><h3>Export zones</h3><p>Cluster factories with trade finance and fast customs.</p></div><div class="opp"><h3>Stable tax calendar</h3><p>Publish multi-year rules so investors can plan.</p></div><div class="opp"><h3>Simple rural KYC</h3><p>Easier ID checks to bring remote people into banking.</p></div></div></section>
+<section id="inst"><h2>Who to ask: key institutions</h2><div class="opps">
+<div class="opp"><h3>Nepal Rastra Bank</h3><p>The central bank. Regulates banks and finance companies and sets exchange rules.</p></div>
+<div class="opp"><h3>Office of the Company Registrar</h3><p>Registers companies and keeps company records.</p></div>
+<div class="opp"><h3>Inland Revenue Department</h3><p>Handles PAN, VAT and income tax.</p></div>
+<div class="opp"><h3>Nepal Stock Exchange</h3><p>The market where shares of listed companies are traded.</p></div>
+<div class="opp"><h3>Securities Board of Nepal</h3><p>Regulates the share market and protects investors.</p></div>
+<div class="opp"><h3>Investment Board Nepal</h3><p>Supports and approves larger investment projects.</p></div>
+<div class="opp"><h3>Department of Customs</h3><p>Manages import and export clearance and duties.</p></div>
+<div class="opp"><h3>Chambers of commerce</h3><p>Business networks that speak for traders and industries.</p></div>
+</div></section>
+<section id="faq"><h2>Common questions</h2>
+<details class="gap"><summary>What is the difference between PAN and VAT?</summary><div class="body"><p>PAN is your tax identity number. VAT registration is needed once your turnover passes the current threshold, and then you charge and report 13% VAT.</p></div></details>
+<details class="gap"><summary>Can I get a loan without land as collateral?</summary><div class="body"><p>Sometimes. Some lenders look at cash flow, guarantees or group lending, and cooperatives often ask for less paperwork. Clean sales records make every option easier.</p></div></details>
+<details class="gap"><summary>Sole proprietorship or company?</summary><div class="body"><p>A sole proprietorship is simple and cheap for small shops. A company gives limited liability and more credibility with banks and partners.</p></div></details>
+<details class="gap"><summary>How much should I save before starting?</summary><div class="body"><p>A common rule is to hold several months of running costs in reserve, so slow sales do not force you to close.</p></div></details>
+<details class="gap"><summary>Where can I check the latest rules?</summary><div class="body"><p>Ask the offices listed above or your ward or municipality. Fees, thresholds and schemes change over time.</p></div></details>
+</section>
+<section id="tools2"><h2>More business tools</h2>
+<div class="lab">
+<div class="panel"><h3>VAT calculator (13%)</h3><label for="va">Amount (NPR)</label><input id="va" type="number" value="10000"><label for="vm">Mode</label><select id="vm"><option value="add">Add VAT to price</option><option value="rem">Price already includes VAT</option></select><button class="btn" id="vb">Calculate</button><div class="out" id="vo" aria-live="polite">Result appears here.</div></div>
+<div class="panel"><h3>Break-even calculator</h3><label for="bf">Fixed costs per month (rent, salary)</label><input id="bf" type="number" value="80000"><label for="bp">Selling price per unit</label><input id="bp" type="number" value="500"><label for="bv">Cost to make or buy one unit</label><input id="bv" type="number" value="300"><button class="btn" id="bb">Find break-even</button><div class="out" id="bo" aria-live="polite">Result appears here.</div></div>
+<div class="panel"><h3>Pricing and margin</h3><label for="pc">Cost per unit (NPR)</label><input id="pc" type="number" value="300"><label for="pm">Profit margin you want (%)</label><input id="pm" type="number" value="25"><button class="btn" id="pb">Suggest price</button><div class="out" id="po" aria-live="polite">Result appears here.</div></div>
+</div></section>
+<section id="inv1"><h2>Invoice maker</h2><div class="lab"><div class="panel noprint"><label for="ivn">Your business name</label><input id="ivn" value="Himal Fresh Foods"><label for="ivc">Customer name</label><input id="ivc" value="Sagar Traders"><label for="ivd">Item or service</label><input id="ivd" value="Local honey, 500 g jar"><div class="two"><div><label for="ivq">Quantity</label><input id="ivq" type="number" value="12"></div><div><label for="ivp">Price each (NPR)</label><input id="ivp" type="number" value="650"></div></div><label for="ivv">Add 13% VAT?</label><select id="ivv"><option value="1">Yes</option><option value="0">No</option></select><button class="btn" id="ivb">Create invoice</button></div>
+<div class="panel"><div class="out" id="ivo" aria-live="polite">Your invoice appears here.</div><button class="btn noprint" id="ivp2">Print or save as PDF</button></div></div></section>
+<section id="cmp1"><h2>Compare two loans</h2><div class="lab"><div class="panel"><label for="la">Loan amount (NPR)</label><input id="la" type="number" value="1000000"><div class="two"><div><h3>Loan A</h3><label for="ar">Rate (%)</label><input id="ar" type="number" value="11" step="0.1"><label for="an">Months</label><input id="an" type="number" value="36"><label for="af">Fee (%)</label><input id="af" type="number" value="1" step="0.1"></div><div><h3>Loan B</h3><label for="br">Rate (%)</label><input id="br" type="number" value="10.5" step="0.1"><label for="bn2">Months</label><input id="bn2" type="number" value="36"><label for="bf2">Fee (%)</label><input id="bf2" type="number" value="2" step="0.1"></div></div><button class="btn" id="cmb">Compare</button></div><div class="panel"><div class="out" id="cmo" aria-live="polite">Fill in two offers and compare the real cost.</div></div></div></section>
+<section id="start"><h2>Start or formalise your business</h2>
+<p class="sm">A general guide. Rules, fees and thresholds change, so confirm each step with the Office of the Company Registrar, the Inland Revenue Department and your local ward or municipality.</p>
+<div class="lab">
+<div class="panel"><h3>Registration checklist</h3><div id="check"></div><div class="bar"><i id="prog"></i></div><span class="sm" id="pt"></span></div>
+<div class="panel"><h3>Funding finder</h3><label for="stage">Where is your business?</label><select id="stage"><option value="idea">Just an idea</option><option value="small">Running small, informal</option><option value="grow">Registered and growing</option><option value="return">Returning from work abroad</option></select><div class="out res" id="fo" aria-live="polite"></div><p class="sm">Availability and terms of schemes change. Ask each lender directly.</p></div>
+</div></section>
+<section id="money1"><h2>Cash tracker</h2><p class="sm">Saved in this browser only. Nothing is sent anywhere.</p>
+<div class="lab"><div class="panel"><label for="td">What was it?</label><input id="td" placeholder="e.g. Rice sale">
+<div class="two"><div><label for="ta">Amount (NPR)</label><input id="ta" type="number"></div><div><label for="tt">Type</label><select id="tt"><option value="in">Income</option><option value="out">Expense</option></select></div></div>
+<button class="btn" id="tb">Add entry</button><button class="btn" id="tc" style="background:var(--mute);margin-left:.5rem">Clear all</button></div>
+<div class="panel"><h3 id="tsum">Balance</h3><div class="bar"><i id="tbar"></i></div><div id="tl"></div></div></div></section>
+<section id="money2"><h2>Grow and convert</h2><div class="lab">
+<div class="panel"><h3>Savings growth</h3><label for="sm">Monthly saving (NPR)</label><input id="sm" type="number" value="5000"><label for="sr">Yearly return (%)</label><input id="sr" type="number" value="8" step="0.5"><label for="sy">Years</label><input id="sy" type="number" value="10" min="1" max="40">
+<button class="btn" id="sb">Project</button><div class="out" id="so" aria-live="polite"></div></div>
+<div class="panel"><h3>Currency converter</h3><label for="ca">Amount</label><input id="ca" type="number" value="100"><label for="cr">Rate: NPR per 1 foreign unit (type today's rate)</label><input id="cr" type="number" value="1.6" step="0.01"><label for="cd">Direction</label><select id="cd"><option value="f">Foreign to NPR</option><option value="n">NPR to foreign</option></select>
+<button class="btn" id="cb">Convert</button><div class="out" id="co" aria-live="polite"></div><p class="sm">The default 1.6 is the fixed INR to NPR peg. For USD and others, check Nepal Rastra Bank's daily rate.</p></div></div></section>
+<section id="learn1"><h2>Learn the language of money</h2><div class="lab">
+<div class="panel"><h3>Glossary</h3><label for="gs">Search a term</label><input id="gs" placeholder="e.g. VAT"><div id="gl"></div></div>
+<div class="panel"><h3>Quick quiz</h3><div id="qz"></div></div></div></section>
+<section id="plan1"><h2>One-page business plan</h2><p class="sm">Answer a few questions and get a plan summary you can print or show a lender.</p>
+<div class="lab"><div class="panel"><label for="bn">Business name</label><input id="bn" value="Himal Fresh Foods"><label for="bw">What do you sell?</label><input id="bw" value="packed local honey and herbs"><label for="bc">Who buys it?</label><input id="bc" value="tourists and city households"><label for="bs">Start-up cost (NPR)</label><input id="bs" type="number" value="400000"><label for="bm">Expected monthly sales (NPR)</label><input id="bm" type="number" value="150000"><label for="bk">Monthly costs (NPR)</label><input id="bk" type="number" value="100000"><button class="btn" id="bg">Build plan</button></div>
+<div class="panel"><div id="pl" class="out">Your plan appears here.</div><button class="btn" id="bp2">Print or save as PDF</button></div></div></section>
+<section id="about1"><div class="herologo"><svg width="96" height="96" role="img" aria-label="ArthaSetu logo"><use href="#lg"/></svg><div><b>ArthaSetu</b><span>artha = wealth, setu = bridge</span></div></div>
+<h2>About us</h2>
+<div class="cols"><div class="panel"><h3>Our mission</h3><p>ArthaSetu helps Nepali business owners, students and families understand money, spot the weak points in the economy, and take practical steps to start, fund and grow a business.</p></div>
+<div class="panel"><h3>Our vision</h3><p>A Nepal where a good idea in any province can find the knowledge, credit and market it needs.</p></div></div></section>
+<section id="about2"><h2>What we believe</h2><div class="opps"><div class="opp"><h3>Plain language</h3><p>We explain money in simple words, in English and Nepali.</p></div><div class="opp"><h3>Practical first</h3><p>Every page ends in something you can do: a calculator, a checklist or a plan.</p></div><div class="opp"><h3>Private by design</h3><p>Your numbers stay in your browser. Nothing is sent to a server.</p></div><div class="opp"><h3>Honest about limits</h3><p>The scorers and helper are demos built on simple rules, not financial advice.</p></div></div></section>
+<section id="about3"><h2>What you can do here</h2><div class="opps"><div class="opp"><h3><a href="#gaps" style="text-decoration:none;color:inherit">Weaknesses and fixes</a></h3><p>See what holds Nepal back and ideas to solve it.</p></div><div class="opp"><h3><a href="#tools" style="text-decoration:none;color:inherit">Business tools</a></h3><p>Calculators, invoices and loan comparisons.</p></div><div class="opp"><h3><a href="#start" style="text-decoration:none;color:inherit">Start a business</a></h3><p>A registration checklist and funding finder.</p></div><div class="opp"><h3><a href="#money" style="text-decoration:none;color:inherit">Money</a></h3><p>Track cash, grow savings and convert currency.</p></div><div class="opp"><h3><a href="#learn" style="text-decoration:none;color:inherit">Learn</a></h3><p>A glossary and quick quiz in plain words.</p></div><div class="opp"><h3><a href="#plan" style="text-decoration:none;color:inherit">Business plan</a></h3><p>Build a one-page plan to print or share.</p></div></div>
+<div class="cols"><div class="panel"><h3>Good to know</h3><ul><li>Figures are approximate and meant for orientation.</li><li>Check Nepal Rastra Bank, the Ministry of Finance, the Inland Revenue Department and the Office of the Company Registrar for official numbers and rules.</li><li>This is an educational prototype, not a lender, bank or adviser.</li></ul></div>
+<div class="panel"><h3>Share ArthaSetu</h3><p>Know a shop owner, student or returning worker who could use this? Send them the link.</p><button class="btn" id="shb">Copy site link</button><div class="sm" id="sho" aria-live="polite" style="margin-top:.6rem"></div></div></div></section>
+<footer><svg width="40" height="40" aria-hidden="true" style="float:left;margin:0 .8rem .4rem 0"><use href="#lg"/></svg><p class="sm pc">Tip for PC: press keys 1 to 8 to switch pages, or press Ctrl+K to search.</p><b>ArthaSetu</b> (artha = wealth, setu = bridge): connecting Nepali businesses to money, markets and know-how.<br>Educational prototype. Built as a starting point you can extend with real data from NRB, the Ministry of Finance and the Nepal Stock Exchange.
+<button class="tab" id="theme" style="margin-left:.5rem">Switch theme</button></footer>
+
+<div id="cp" hidden role="dialog" aria-modal="true" aria-label="Search the site"><div class="cpb"><input id="cpi" placeholder="Search pages and tools" autocomplete="off"><div id="cpl"></div></div></div>
+<button id="up" hidden aria-label="Back to top">↑</button>
+<script>
+var GAPS=[
+{a:"Money",t:"Heavy reliance on remittances",w:["Household spending depends on money sent from abroad.","Little of it goes into businesses or productive assets.","A global downturn or labour-policy change hits families fast."],f:["Offer diaspora bonds and remittance-linked savings accounts.","Run financial literacy programs for migrant families.","Create start-up funds and training for returning workers."]},
+{a:"Trade",t:"Large trade deficit and import dependence",w:["Nepal imports fuel, machinery and food at a much higher level than it exports.","Export range is narrow and quality standards are uneven.","Landlocked transit adds cost and delay."],f:["Back export products with certification and trade finance.","Add value at home: process herbs, tea and wool before selling.","Invest in dry ports and faster customs with digital clearance."]},
+{a:"Credit",t:"Small businesses struggle to get loans",w:["Banks ask for land collateral that many founders do not have.","Informal records make risk hard to judge.","Interest rates can swing sharply."],f:["Lend against cash flow using wallet, QR and invoice data.","Expand credit guarantee schemes for small firms.","Use AI risk scoring to widen approvals safely (see the lab below)."]},
+{a:"Digital",t:"Uneven financial inclusion and digital access",w:["Rural areas have fewer branches and weaker internet.","Digital literacy and trust in online payments are still growing.","Fraud and phishing worry new users."],f:["Use agent banking and bank-on-wheels in remote areas.","Offer local-language apps with voice help.","Teach fraud awareness and add simple dispute tools."]},
+{a:"Policy",t:"Red tape and slow, unclear rules",w:["Licences, approvals and tax steps involve many offices.","Rules can change often, which scares investors.","Corruption risk raises the cost of doing business."],f:["Launch a true one-window online portal with tracked status.","Publish stable multi-year policy timelines.","Make procurement and permits open and auditable."]},
+{a:"Markets",t:"Shallow capital market",w:["NEPSE has few listed sectors and low participation.","Retail investors can be swayed by rumours.","Few bond or venture options for firms."],f:["Encourage listing of hydropower, tech and service firms.","Improve investor education and disclosure rules.","Develop corporate bonds, mutual funds and a start-up fund ecosystem."]},
+{a:"Energy",t:"Hydropower potential not fully used",w:["Projects face delays from approvals and grid links.","Power sale and pricing deals can be slow.","Seasonal flow differences cause shortages or waste."],f:["Build more transmission and cross-border power trade.","Use long-term power purchase agreements.","Add solar and storage to balance dry and wet seasons."]}];
+var tabs=document.getElementById("tabs"),list=document.getElementById("list");
+var areas=["All"].concat(GAPS.map(function(g){return g.a}).filter(function(v,i,s){return s.indexOf(v)===i}));
+function esc(a){return a.map(function(x){return "<li>"+x+"</li>"}).join("")}
+function render(f){list.innerHTML=GAPS.filter(function(g){return f==="All"||g.a===f}).map(function(g){
+return '<details class="gap"><summary><span>'+g.t+'</span><em>'+g.a+'</em></summary><div class="body"><div class="why"><h4>The problem</h4><ul>'+esc(g.w)+'</ul></div><div class="fix"><h4>How to solve it</h4><ul>'+esc(g.f)+'</ul></div></div></details>'}).join("");
+Array.prototype.forEach.call(tabs.children,function(b){b.setAttribute("aria-pressed",b.textContent===f)})}
+areas.forEach(function(a){var b=document.createElement("button");b.className="tab";b.textContent=a;b.onclick=function(){render(a)};tabs.appendChild(b)});
+render("All");
+var fmt=function(n){return "NPR "+Math.round(n).toLocaleString("en-IN")};
+function v(id){return parseFloat(document.getElementById(id).value)||0}
+document.getElementById("score").onclick=function(){
+var rev=v("rev"),yrs=v("yrs"),dig=Math.min(v("dig"),100),reg=v("reg"),debt=v("debt"),s=0,tips=[];
+s+=Math.min(rev/20000,20);s+=Math.min(yrs*4,20);s+=dig*.25;s+=reg?20:0;
+var load=rev?debt/rev:1;s+=load<.2?15:load<.4?8:0;
+if(!reg)tips.push("Register for PAN/VAT to unlock formal credit.");
+if(dig<50)tips.push("Move more sales to QR or wallet payments to build a record.");
+if(load>=.4)tips.push("Lower existing loan payments before applying.");
+if(yrs<2)tips.push("Banks prefer at least two years of history, so consider a micro-loan first.");
+s=Math.round(Math.min(s,100));
+var l=s>=70?"Strong":s>=45?"Fair":"Needs work";
+document.getElementById("scoreOut").innerHTML="<b>Score: "+s+"/100 ("+l+")</b><div class='bar'><i style='width:"+s+"%'></i></div>"+(tips.length?"<ul>"+esc(tips)+"</ul>":"Looks ready to talk to a lender.")};
+document.getElementById("emi").onclick=function(){
+var P=v("p"),n=Math.max(v("m"),1),r=v("r")/1200,e=r?P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):P/n;
+document.getElementById("emiOut").innerHTML="<b>"+fmt(e)+" per month</b><br>Total repaid "+fmt(e*n)+", of which interest "+fmt(e*n-P)};
+var A={"How do I start saving?":"Move 10 to 20 percent of income into a separate account on payday. Build one to three months of expenses first, then consider a fixed deposit or a cooperative savings plan.","How can my shop get paid digitally?":"Put up a QR code from a bank or wallet, record each sale, and use the monthly statement as proof of income when you seek a loan.","Should I invest in NEPSE?":"Only money you can leave for years. Spread across sectors, read company reports, and avoid tips from social media. Talk to a licensed broker.","How do I grow exports?":"Pick one product where you have quality and a story, get the right certificates, test a small shipment, and ask a bank about trade finance."};
+var K=[[/sav|budget|deposit/,"How do I start saving?"],[/qr|digital|esewa|khalti|pay/,"How can my shop get paid digitally?"],[/nepse|share|stock|invest/,"Should I invest in NEPSE?"],[/export|trade|sell abroad/,"How do I grow exports?"]];
+var qi=document.getElementById("q");
+function ask(){var t=qi.value.toLowerCase(),o=document.getElementById("askOut"),hit=null;
+if(/loan|credit|borrow/.test(t)){o.textContent="Record your sales digitally, register for PAN, keep loan payments under about 30 percent of income, then try the readiness scorer on this page. A cooperative or micro-finance loan can be a first step.";return}
+K.forEach(function(k){if(!hit&&k[0].test(t))hit=k[1]});
+o.textContent=hit?A[hit]:"I can help with saving, loans, QR payments, NEPSE and exports. Try one of the suggestions."}
+document.getElementById("ask").onclick=ask;qi.onkeydown=function(e){if(e.key==="Enter")ask()};
+Object.keys(A).forEach(function(k){var b=document.createElement("button");b.className="chip";b.textContent=k;b.onclick=function(){qi.value=k;ask()};document.getElementById("chips").appendChild(b)});
+[["Services",60],["Agriculture",24],["Industry",14]].forEach(function(s){document.getElementById("sectors").insertAdjacentHTML("beforeend","<div class='sec'><span>"+s[0]+"</span><div class='bar'><i style='width:"+s[1]+"%'></i></div><b>~"+s[1]+"%</b></div>")});
+document.getElementById("theme").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark")};
+
+var MAP={top:"home",opps:"home",road:"home",gaps:"gaps",lab:"tools",tools2:"tools",start:"start",about1:"about",about2:"about",about3:"about",inv1:"tools",cmp1:"tools",home2:"home",prov:"home",ideas:"home",inst:"home",faq:"home",pay1:"home",journeys:"home",cal1:"home",pol1:"gaps",money1:"money",money2:"money",learn1:"learn",plan1:"plan"};
+function route(){var h=(location.hash||"#home").slice(1);if(!/^(home|gaps|tools|start|money|learn|plan|about)$/.test(h))h="home";
+document.querySelectorAll("section").forEach(function(x){x.hidden=MAP[x.id]!==h});
+document.querySelectorAll("nav a:not(.logo)").forEach(function(a){if(a.getAttribute("href")==="#"+h)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);route();
+document.querySelectorAll(".sw").forEach(function(b){b.onclick=function(){document.documentElement.style.setProperty("--red",b.dataset.c)}});
+var ne=false,H=document.querySelector("h1");H.dataset.ne="नेपालको अर्थतन्त्र: कहाँ अड्किएको छ, र कसरी अगाडि बढाउने";
+var T=document.querySelectorAll("[data-ne]");T.forEach(function(e){e.dataset.en=e.textContent});
+document.getElementById("lang").onclick=function(){ne=!ne;T.forEach(function(e){e.textContent=ne?e.dataset.ne:e.dataset.en});this.textContent=ne?"English":"नेपाली"};
+function $(i){return document.getElementById(i)}
+$("vb").onclick=function(){var a=v("va"),p=$("vm").value==="add",base=p?a:a/1.13,vat=base*.13;$("vo").innerHTML="Price before VAT: <b>"+fmt(base)+"</b><br>VAT (13%): <b>"+fmt(vat)+"</b><br>Total: <b>"+fmt(base+vat)+"</b>"};
+$("bb").onclick=function(){var m=v("bp")-v("bv");$("bo").innerHTML=m<=0?"Your price must be higher than your unit cost.":"Sell at least <b>"+Math.ceil(v("bf")/m)+" units</b> a month (about "+fmt(Math.ceil(v("bf")/m)*v("bp"))+" in sales) to cover costs."};
+$("pb").onclick=function(){var g=v("pm")/100;$("po").innerHTML=g>=1?"Margin must be below 100%.":"Charge <b>"+fmt(v("pc")/(1-g))+"</b> per unit to keep a "+v("pm")+"% margin."};
+var ST=[["Choose your structure","Sole proprietorship, partnership or private company."],["Register the business","Company at the Office of the Company Registrar (online), or small firms at the local office."],["Get a PAN","Permanent Account Number from the Inland Revenue Department."],["Check VAT","Register if your turnover passes the current threshold."],["Open a business bank account","Keeps records clean for future loans."],["Get local licences","Municipality or ward business licence and any sector permit."],["Register your staff","Enrol employees in the Social Security Fund."]],done={};
+try{done=JSON.parse(localStorage.getItem("chk")||"{}")}catch(e){}
+function paint(){var n=0;$("check").innerHTML="";ST.forEach(function(x,i){if(done[i])n++;var d=document.createElement("label");d.className="chk";d.innerHTML="<input type='checkbox' "+(done[i]?"checked":"")+"><span>"+x[0]+"<small>"+x[1]+"</small></span>";d.firstChild.onchange=function(){done[i]=this.checked;try{localStorage.setItem("chk",JSON.stringify(done))}catch(e){}paint()};$("check").appendChild(d)});
+$("prog").style.width=n/ST.length*100+"%";$("pt").textContent=n+" of "+ST.length+" steps done"}
+paint();
+var F={idea:["Savings and family support to test a small version first","Cooperatives and micro-finance for tiny starter loans","Start-up competitions and incubators for grants and mentors"],small:["Commercial or development bank small-business loans once you have a PAN and records","Cooperative loans, which often need less paperwork","Government-backed or priority-sector lending for farms, small industry and women-led firms"],grow:["Bank working-capital and term loans, supported by digital sales records","Equipment leasing and supplier credit","Angel or venture investors if you have a scalable product"],"return":["Special schemes for returnee workers and youth self-employment, where offered","Your own savings plus a bank loan matched to your skills","Training and mentoring programs before you borrow"]};
+function fund(){$("fo").innerHTML="<ul>"+esc(F[$("stage").value])+"</ul>"}$("stage").onchange=fund;fund();
+
+var MO={snow:null,sun:{"--bg":"#fff4e8","--card":"#fffaf3","--ink":"#3a2210","--mute":"#7a5a40","--line":"#f0d9bf"},forest:{"--bg":"#eef6ef","--card":"#fbfffb","--ink":"#14301f","--mute":"#4c6b57","--line":"#cfe2d3"},night:{"--bg":"#0b1220","--card":"#131d33","--ink":"#e8eefc","--mute":"#9aa9c6","--line":"#26334f"}};
+$("mood").onchange=function(){var r=document.documentElement.style,m=MO[this.value];["--bg","--card","--ink","--mute","--line"].forEach(function(k){r.removeProperty(k)});if(m)for(var k in m)r.setProperty(k,m[k])};
+var TX=[];try{TX=JSON.parse(localStorage.getItem("tx")||"[]")}catch(e){}
+function save(){try{localStorage.setItem("tx",JSON.stringify(TX))}catch(e){}}
+function tx(){var i=0,o=0;TX.forEach(function(t){t.k==="in"?i+=t.a:o+=t.a});
+$("tsum").textContent="Balance: "+fmt(i-o);$("tbar").style.width=(i+o?i/(i+o)*100:0)+"%";
+$("tl").innerHTML=TX.length?"<p class='sm'>In "+fmt(i)+" | Out "+fmt(o)+"</p>":"No entries yet. Add your first sale or cost.";
+TX.forEach(function(t,n){var r=document.createElement("div");r.className="row";r.innerHTML="<span>"+t.d.replace(/</g,"&lt;")+"</span><span>"+(t.k==="in"?"+":"-")+fmt(t.a)+" <button aria-label='Delete'>x</button></span>";r.querySelector("button").onclick=function(){TX.splice(n,1);save();tx()};$("tl").appendChild(r)})}
+$("tb").onclick=function(){var a=v("ta");if(!a||!$("td").value)return;TX.push({d:$("td").value,a:a,k:$("tt").value});$("td").value="";$("ta").value="";save();tx()};
+$("tc").onclick=function(){TX=[];save();tx()};tx();
+$("sb").onclick=function(){var m=v("sm"),r=v("sr")/1200,y=Math.max(1,v("sy")),b=0,pts=[];for(var i=1;i<=y*12;i++){b=(b+m)*(1+r);if(i%12===0)pts.push(b)}
+var mx=pts[pts.length-1],w=300/pts.length,bars=pts.map(function(p,i){var h=p/mx*80;return "<rect x='"+(i*w+1)+"' y='"+(90-h)+"' width='"+(w-2)+"' height='"+h+"' fill='var(--red)' opacity='.8'/>"}).join("");
+$("so").innerHTML="After "+y+" years: <b>"+fmt(b)+"</b><br>You put in "+fmt(m*y*12)+"; growth adds "+fmt(b-m*y*12)+".<svg viewBox='0 0 300 90' width='100%' role='img' aria-label='Yearly savings bars'>"+bars+"</svg>"};
+$("cb").onclick=function(){var a=v("ca"),r=v("cr");$("co").innerHTML=r<=0?"Enter a rate above zero.":$("cd").value==="f"?"<b>"+fmt(a*r)+"</b>":"<b>"+(a/r).toFixed(2)+"</b> foreign units"};
+var G=[["PAN","Permanent Account Number used for tax."],["VAT","Value Added Tax, 13% on most goods and services."],["NEPSE","Nepal Stock Exchange where listed shares trade."],["NRB","Nepal Rastra Bank, the central bank."],["EMI","Equal monthly instalment on a loan."],["Collateral","An asset pledged to secure a loan."],["Working capital","Cash needed for daily operations."],["Remittance","Money sent home by workers abroad."],["Dividend","A share of profit paid to shareholders."],["Break-even","Sales level where income equals costs."],["Cooperative","A member-owned savings and credit group."],["Inflation","A general rise in prices over time."]];
+function gl(){var q=$("gs").value.toLowerCase();$("gl").innerHTML=G.filter(function(g){return (g[0]+g[1]).toLowerCase().indexOf(q)>-1}).map(function(g){return "<div class='row'><b>"+g[0]+"</b><span>"+g[1]+"</span></div>"}).join("")||"No match."}$("gs").oninput=gl;gl();
+var Q=[["What is Nepal's VAT rate on most goods?",["10%","13%","18%"],1],["Who is Nepal's central bank?",["NEPSE","Nepal Rastra Bank","Inland Revenue Dept"],1],["At break-even, your profit is:",["Zero","Highest","Negative forever"],0],["What helps most when asking for a loan?",["Clear sales records","A bigger sign","Fewer customers"],0],["Why spread savings across several places?",["To lower risk","To pay more tax","To avoid banks"],0]],qn=0,qs=0;
+function quiz(){var z=$("qz");if(qn>=Q.length){z.innerHTML="<b>Score: "+qs+"/"+Q.length+"</b><br><button class='btn' id='qr'>Try again</button>";$("qr").onclick=function(){qn=0;qs=0;quiz()};return}
+var q=Q[qn];z.innerHTML="<p><b>"+(qn+1)+". "+q[0]+"</b></p>";q[1].forEach(function(o,i){var b=document.createElement("button");b.className="qb";b.textContent=o;b.onclick=function(){b.classList.add(i===q[2]?"good":"bad");if(i===q[2])qs++;setTimeout(function(){qn++;quiz()},700)};z.appendChild(b)})}quiz();
+$("bg").onclick=function(){var c=v("bs"),m=v("bm"),k=v("bk"),p=m-k,e=function(i){return $(i).value.replace(/</g,"&lt;")};
+$("pl").innerHTML="<h3>"+e("bn")+"</h3><p><b>Offer:</b> "+e("bw")+".<br><b>Customers:</b> "+e("bc")+".</p><p><b>Start-up cost:</b> "+fmt(c)+"<br><b>Monthly profit:</b> "+fmt(p)+" ("+(m?Math.round(p/m*100):0)+"% margin)<br><b>Payback:</b> "+(p>0?Math.ceil(c/p)+" months":"Not yet. Costs are higher than sales.")+"</p><p><b>Funding ask:</b> "+fmt(c)+" for equipment, stock and marketing.</p>"};
+$("bp2").onclick=function(){window.print()};
+
+var FD=[[/loan|credit|borrow|emi/,"Loan readiness scorer and payment calculator","#tools"],[/vat|tax|invoice|price|margin|break/,"VAT, break-even and pricing tools","#tools"],[/regist|pan|licen|start|fund/,"Registration checklist and funding finder","#start"],[/sav|invest|track|cash|currency|convert|dollar|rupee/,"Cash tracker, savings growth and converter","#money"],[/learn|quiz|term|glossary|mean/,"Glossary and quiz","#learn"],[/plan|lender|print/,"One-page business plan","#plan"],[/problem|weak|fix|solve/,"Weaknesses and fixes","#gaps"]];
+function find(){var q=$("ff").value.toLowerCase(),h=FD.filter(function(d){return q&&d[0].test(q)});$("fr").innerHTML=q?(h.length?h.map(function(d){return "<li><a href='"+d[2]+"'>"+d[1]+"</a></li>"}).join(""):"Nothing matched. Try loan, VAT, register or save."):""}
+$("ff").oninput=find;
+["loan","VAT","register","save","plan","convert"].forEach(function(w){var b=document.createElement("button");b.className="chip";b.textContent=w;b.onclick=function(){$("ff").value=w;find()};$("fc").appendChild(b)});
+var HC=[["I record every sale","#money"],["I have a PAN","#start"],["I have a business bank account","#start"],["I keep two months of costs saved","#money"],["Customers can pay by QR or wallet","#tools"],["I have a written plan","#plan"]];
+function hc(){var n=0,nx=null;Array.prototype.forEach.call($("hc").querySelectorAll("input"),function(c,i){if(c.checked)n++;else if(!nx)nx=HC[i]});
+$("hb").style.width=n/HC.length*100+"%";$("ho").innerHTML="<b>"+n+" of "+HC.length+"</b> habits in place."+(nx?" Next step: <a href='"+nx[1]+"'>"+nx[0].replace("I ","build this: ")+"</a>":" Great base. Try applying for credit.")}
+HC.forEach(function(h){var l=document.createElement("label");l.className="chk";l.innerHTML="<input type='checkbox'><span>"+h[0]+"</span>";l.firstChild.onchange=hc;$("hc").appendChild(l)});hc();
+var TP=["Pay yourself a fixed salary so business and home money stay separate.","Deposit sales into the business account every day.","Save a little right after each sale, not at month end.","Ask for a written invoice for every big purchase.","Compare at least three lenders before borrowing.","Never invest money you will need within a year.","Track your best-selling product and keep it in stock.","Review your prices every quarter as costs change."];
+function tip(){$("tip").textContent=TP[Math.floor(Math.random()*TP.length)]}$("tipb").onclick=tip;tip();
+var PV={"Koshi":["Industrial belt around Biratnagar, tea and cardamom in the hills, and Everest-region tourism.","Floods and weak hill road links."],"Madhesh":["Fertile plains for rice and sugarcane, and Birgunj, the main trade gateway with India.","Low incomes and limited skills training."],"Bagmati":["Kathmandu valley, banks, IT firms, services and most head offices.","Crowding, pollution and high costs."],"Gandaki":["Pokhara tourism, hydropower and adventure sports.","Landslide risk and seasonal demand."],"Lumbini":["Farming, Lumbini pilgrimage tourism and the Bhairahawa economic zone.","Needs more processing industry."],"Karnali":["Herbs, apples and large hydropower and tourism potential.","Remote roads and the fewest services."],"Sudurpashchim":["Border trade, farming and hydropower potential.","Distance from the capital and heavy migration."]};
+Object.keys(PV).forEach(function(k,i){var b=document.createElement("button");b.className="tab";b.textContent=k;b.onclick=function(){Array.prototype.forEach.call($("pt2").children,function(x){x.setAttribute("aria-pressed",x===b)});$("pd").innerHTML="<h3>"+k+"</h3><p><b>Known for:</b> "+PV[k][0]+"</p><p><b>Challenge:</b> "+PV[k][1]+"</p>"};$("pt2").appendChild(b);if(!i)b.onclick()});
+var ID={food:["Street-food cart with momo or sel roti","Cloud kitchen for office lunch boxes","Packaged honey, spices and pickles","Small food-processing unit"],tech:["Freelance design or coding on global sites","Social media and ads for local shops","Mobile app for local services","IT outsourcing team"],tour:["Local guide and photo tours","Homestay with two or three rooms","Trekking gear rental shop","Boutique eco-lodge"],farm:["Vegetable plots with direct delivery","Mushroom or poultry unit","Tunnel farming with drip irrigation","Cold storage and packing centre"]};
+$("ig").onclick=function(){var i=ID[$("ii").value][+$("ib").value];$("io").innerHTML="<b>"+i+"</b><br>Next: test with a few customers, then use the <a href='#plan'>business plan</a> and <a href='#tools'>break-even tool</a>."};
+var NE={"Home":"गृहपृष्ठ","Weaknesses & fixes":"कमजोरी र समाधान","Business tools":"व्यवसाय उपकरण","Start a business":"व्यवसाय सुरु गर्नुहोस्","Money":"पैसा","Learn":"सिक्नुहोस्","Business plan":"व्यवसाय योजना","ArthaSetu":"अर्थसेतु","Snow":"हिउँ","Sunrise":"सूर्योदय","Forest":"वन","Night":"रात",
+"Nepal’s economy: where it is stuck, and how to move it":"नेपालको अर्थतन्त्र: कहाँ अड्किएको छ, र कसरी अगाडि बढाउने",
+"A plain-language look at the weak spots in Nepali business and finance, practical fixes for each, and a working prototype of how AI could help small businesses get credit.":"नेपाली व्यवसाय र वित्तका कमजोर पक्षहरूको सरल भाषामा चर्चा, हरेकको व्यावहारिक समाधान, र एआईले साना व्यवसायलाई ऋण पाउन कसरी मद्दत गर्न सक्छ भन्ने नमुना।",
+"Try business tools":"व्यवसाय उपकरण प्रयोग गर्नुहोस्","Remittance-heavy":"रेमिट्यान्समा निर्भर","Import-heavy":"आयातमा निर्भर","Hydropower rich":"जलविद्युतमा धनी","Young & mobile":"युवा र मोबाइल-प्रेमी",
+"Money sent home by workers abroad is roughly a quarter of GDP.":"विदेशमा काम गर्नेले पठाएको रकम कुल गार्हस्थ्य उत्पादनको करिब एक चौथाइ हो।","Nepal buys far more than it sells, so the trade gap is wide.":"नेपालले बेच्नेभन्दा धेरै किन्छ, त्यसैले व्यापार घाटा ठूलो छ।","Huge potential for clean-power exports, still under-used.":"स्वच्छ बिजुली निर्यातको ठूलो सम्भावना, अझै कम प्रयोग भएको।","Wallets like eSewa and Khalti show people will go digital.":"eSewa र Khalti जस्ता वालेटले मानिस डिजिटल हुन तयार छन् भन्ने देखाउँछन्।",
+"The goal: climb, don’t stall":"लक्ष्य: माथि चढौँ, नरोकिऔँ","Today":"आज","Target":"लक्ष्य",
+"What do you need today?":"आज तपाईंलाई के चाहिन्छ?","Quick finder":"छिटो खोजी","Type a goal, like loan, VAT, register, save":"लक्ष्य लेख्नुहोस्: ऋण, भ्याट, दर्ता, बचत","Business health check":"व्यवसाय स्वास्थ्य जाँच",
+"I record every sale":"म हरेक बिक्री लेख्छु","I have a PAN":"मसँग प्यान छ","I have a business bank account":"मसँग व्यवसायिक बैंक खाता छ","I keep two months of costs saved":"मैले दुई महिनाको खर्च जम्मा गरेको छु","Customers can pay by QR or wallet":"ग्राहकले QR वा वालेटबाट तिर्न सक्छन्","I have a written plan":"मसँग लिखित योजना छ","Next step:":"अर्को कदम:","Great base. Try applying for credit.":"राम्रो आधार। ऋणको लागि आवेदन गरेर हेर्नुहोस्।","habits in place.":"बानी अपनाइएका छन्।",
+"Money tip":"पैसा सुझाव","Another tip":"अर्को सुझाव","Explore Nepal by province":"प्रदेश अनुसार नेपाल हेर्नुहोस्","Known for:":"प्रख्यात:","Challenge:":"चुनौती:","Koshi":"कोशी","Madhesh":"मधेश","Bagmati":"बागमती","Gandaki":"गण्डकी","Lumbini":"लुम्बिनी","Karnali":"कर्णाली","Sudurpashchim":"सुदूरपश्चिम",
+"Business idea generator":"व्यवसाय आइडिया जेनेरेटर","Your budget":"तपाईंको बजेट","Under NPR 100,000":"रु. १ लाखभन्दा कम","NPR 100,000 to 500,000":"रु. १ लाखदेखि ५ लाख","NPR 500,000 to 2 million":"रु. ५ लाखदेखि २० लाख","Over NPR 2 million":"रु. २० लाखभन्दा बढी","Your interest":"तपाईंको रुचि","Food":"खाना","Technology":"प्रविधि","Farming":"कृषि","Suggest an idea":"आइडिया सुझाव","Pick a budget and interest.":"बजेट र रुचि छान्नुहोस्।",
+"Where the economy earns, and where it can grow":"अर्थतन्त्र कहाँ कमाउँछ, कहाँ बढ्न सक्छ","Hydropower":"जलविद्युत","Tourism":"पर्यटन","IT outsourcing":"आईटी आउटसोर्सिङ","Agro-processing":"कृषि प्रशोधन","Fintech":"फिनटेक","Services":"सेवा","Agriculture":"कृषि","Industry":"उद्योग",
+"A realistic roadmap":"यथार्थपरक मार्गचित्र","Year 1: Fix the basics.":"पहिलो वर्ष: आधार सुधार।","Year 2: Open credit to small firms.":"दोस्रो वर्ष: साना फर्ममा ऋण खोल्ने।","Year 3: Turn remittances into investment.":"तेस्रो वर्ष: रेमिट्यान्सलाई लगानीमा बदल्ने।","Year 4 and on: Export what Nepal is good at.":"चौथो वर्षदेखि: नेपाल जसमा राम्रो छ त्यही निर्यात गर्ने।",
+"Who to ask: key institutions":"कसलाई सोध्ने: मुख्य संस्था","Nepal Rastra Bank":"नेपाल राष्ट्र बैंक","Office of the Company Registrar":"कम्पनी रजिष्ट्रारको कार्यालय","Inland Revenue Department":"आन्तरिक राजस्व विभाग","Nepal Stock Exchange":"नेपाल स्टक एक्सचेन्ज","Securities Board of Nepal":"नेपाल धितोपत्र बोर्ड","Investment Board Nepal":"लगानी बोर्ड नेपाल","Department of Customs":"भन्सार विभाग","Chambers of commerce":"वाणिज्य संघ",
+"Common questions":"सामान्य प्रश्न","What is the difference between PAN and VAT?":"प्यान र भ्याटमा के फरक छ?","Can I get a loan without land as collateral?":"जग्गा धितो बिना ऋण पाउन सकिन्छ?","Sole proprietorship or company?":"एकल स्वामित्व कि कम्पनी?","How much should I save before starting?":"सुरु गर्नु अघि कति बचत गर्ने?","Where can I check the latest rules?":"नयाँ नियम कहाँ हेर्ने?",
+"Weaknesses and how to solve them":"कमजोरी र तिनको समाधान","All":"सबै","Trade":"व्यापार","Credit":"ऋण","Digital":"डिजिटल","Policy":"नीति","Markets":"बजार","Energy":"ऊर्जा","The problem":"समस्या","How to solve it":"समाधान कसरी गर्ने",
+"Heavy reliance on remittances":"रेमिट्यान्समा अत्यधिक निर्भरता","Large trade deficit and import dependence":"ठूलो व्यापार घाटा र आयात निर्भरता","Small businesses struggle to get loans":"साना व्यवसायलाई ऋण पाउन गाह्रो","Uneven financial inclusion and digital access":"असमान वित्तीय समावेशिता र डिजिटल पहुँच","Red tape and slow, unclear rules":"झन्झट र ढिला, अस्पष्ट नियम","Shallow capital market":"उथलो पुँजी बजार","Hydropower potential not fully used":"जलविद्युत सम्भावना पूर्ण प्रयोग भएको छैन",
+"AI prototype lab":"एआई नमुना प्रयोगशाला","SME loan readiness scorer":"साना व्यवसायको ऋण तयारी स्कोर","Monthly sales (NPR)":"मासिक बिक्री (रु.)","Years in business":"व्यवसायका वर्ष","Share of sales recorded digitally (%)":"डिजिटल रूपमा लेखिएको बिक्री (%)","Registered with PAN/VAT?":"प्यान/भ्याटमा दर्ता?","Yes":"हो","No":"होइन","Existing monthly loan payments (NPR)":"हालको मासिक ऋण भुक्तानी (रु.)","Check readiness":"तयारी जाँच्नुहोस्","Fill in the form and press the button.":"फारम भरेर बटन थिच्नुहोस्।","Score:":"स्कोर:","Strong":"बलियो","Fair":"मध्यम","Needs work":"सुधार चाहिन्छ",
+"Loan EMI calculator":"ऋण किस्ता क्याल्कुलेटर","Loan amount (NPR)":"ऋण रकम (रु.)","Yearly interest rate (%)":"वार्षिक ब्याज दर (%)","Term (months)":"अवधि (महिना)","Calculate":"गणना गर्नुहोस्","Monthly payment appears here.":"मासिक किस्ता यहाँ देखिन्छ।","per month":"प्रति महिना","Total repaid":"कुल तिरिएको","interest":"ब्याज",
+"Ask the money helper":"पैसा सहायकलाई सोध्नुहोस्","Type a question about saving, loans, QR, NEPSE or exports":"बचत, ऋण, QR, नेप्से वा निर्यातबारे प्रश्न लेख्नुहोस्","Ask":"सोध्नुहोस्","How do I start saving?":"बचत कसरी सुरु गर्ने?","How can my shop get paid digitally?":"मेरो पसलले डिजिटल भुक्तानी कसरी पाउने?","Should I invest in NEPSE?":"के मैले नेप्सेमा लगानी गर्नुपर्छ?","How do I grow exports?":"निर्यात कसरी बढाउने?",
+"More business tools":"थप व्यवसाय उपकरण","VAT calculator (13%)":"भ्याट क्याल्कुलेटर (१३%)","Amount (NPR)":"रकम (रु.)","Mode":"प्रकार","Add VAT to price":"मूल्यमा भ्याट थप्ने","Price already includes VAT":"मूल्यमा भ्याट समावेश छ","Result appears here.":"नतिजा यहाँ देखिन्छ।","Price before VAT:":"भ्याट अघिको मूल्य:","Total:":"जम्मा:",
+"Break-even calculator":"ब्रेक-इभन क्याल्कुलेटर","Fixed costs per month (rent, salary)":"मासिक स्थिर खर्च (भाडा, तलब)","Selling price per unit":"प्रति एकाइ बिक्री मूल्य","Cost to make or buy one unit":"एक एकाइ बनाउन वा किन्न लागत","Find break-even":"ब्रेक-इभन पत्ता लगाउनुहोस्","Pricing and margin":"मूल्य र मार्जिन","Cost per unit (NPR)":"प्रति एकाइ लागत (रु.)","Profit margin you want (%)":"चाहिएको नाफा मार्जिन (%)","Suggest price":"मूल्य सुझाव",
+"Start or formalise your business":"आफ्नो व्यवसाय सुरु वा दर्ता गर्नुहोस्","Registration checklist":"दर्ता चेकलिस्ट","Choose your structure":"संरचना छान्नुहोस्","Register the business":"व्यवसाय दर्ता गर्नुहोस्","Get a PAN":"प्यान लिनुहोस्","Check VAT":"भ्याट जाँच्नुहोस्","Open a business bank account":"व्यवसायिक बैंक खाता खोल्नुहोस्","Get local licences":"स्थानीय इजाजत लिनुहोस्","Register your staff":"कर्मचारी दर्ता गर्नुहोस्","steps done":"चरण पूरा","Funding finder":"कोष खोजी","Where is your business?":"तपाईंको व्यवसाय कुन चरणमा छ?","Just an idea":"केवल विचार","Running small, informal":"सानो, अनौपचारिक रूपमा चलिरहेको","Registered and growing":"दर्ता भई बढ्दै","Returning from work abroad":"विदेशबाट फर्केको",
+"Cash tracker":"नगद ट्र्याकर","Saved in this browser only. Nothing is sent anywhere.":"यो ब्राउजरमा मात्र सुरक्षित। कतै पठाइँदैन।","What was it?":"के थियो?","Type":"प्रकार","Income":"आम्दानी","Expense":"खर्च","Add entry":"प्रविष्टि थप्नुहोस्","Clear all":"सबै मेट्नुहोस्","Balance:":"मौज्दात:","No entries yet. Add your first sale or cost.":"कुनै प्रविष्टि छैन। पहिलो बिक्री वा खर्च थप्नुहोस्।",
+"Grow and convert":"बढाउनुहोस् र साट्नुहोस्","Savings growth":"बचत वृद्धि","Monthly saving (NPR)":"मासिक बचत (रु.)","Yearly return (%)":"वार्षिक प्रतिफल (%)","Years":"वर्ष","Project":"अनुमान गर्नुहोस्","Currency converter":"मुद्रा परिवर्तक","Amount":"रकम","Direction":"दिशा","Foreign to NPR":"विदेशीबाट रुपैयाँ","NPR to foreign":"रुपैयाँबाट विदेशी","Convert":"परिवर्तन गर्नुहोस्","Rate: NPR per 1 foreign unit (type today's rate)":"दर: १ विदेशी एकाइको रु. (आजको दर लेख्नुहोस्)",
+"Learn the language of money":"पैसाको भाषा सिक्नुहोस्","Glossary":"शब्दकोश","Search a term":"शब्द खोज्नुहोस्","No match.":"कुनै मिलेन।","Quick quiz":"छिटो क्विज","Try again":"फेरि प्रयास गर्नुहोस्",
+"One-page business plan":"एक पृष्ठको व्यवसाय योजना","Answer a few questions and get a plan summary you can print or show a lender.":"केही प्रश्नको उत्तर दिनुहोस् र प्रिन्ट गर्न वा ऋणदातालाई देखाउन मिल्ने योजना सारांश पाउनुहोस्।","Business name":"व्यवसायको नाम","What do you sell?":"तपाईं के बेच्नुहुन्छ?","Who buys it?":"को किन्छ?","Start-up cost (NPR)":"सुरुवाती लागत (रु.)","Expected monthly sales (NPR)":"अपेक्षित मासिक बिक्री (रु.)","Monthly costs (NPR)":"मासिक खर्च (रु.)","Build plan":"योजना बनाउनुहोस्","Your plan appears here.":"तपाईंको योजना यहाँ देखिन्छ।","Print or save as PDF":"प्रिन्ट वा PDF सुरक्षित गर्नुहोस्","Offer:":"प्रस्ताव:","Customers:":"ग्राहक:","Start-up cost:":"सुरुवाती लागत:","Monthly profit:":"मासिक नाफा:","Payback:":"लागत फिर्ता:","months":"महिना","Funding ask:":"कोष माग:",
+"Switch theme":"थिम बदल्नुहोस्","Educational prototype.":"शैक्षिक नमुना।"};
+var RE=new RegExp("(?<![A-Za-z])("+Object.keys(NE).sort(function(a,b){return b.length-a.length}).map(function(k){return k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")(?![A-Za-z])","g");
+var ORG=new WeakMap(),NEP=false;
+function t1(n){var p=n.parentNode;if(!p||/SCRIPT|STYLE/.test(p.nodeName)||p.id==="lang")return;if(!ORG.has(n)){if(!n.nodeValue.trim())return;ORG.set(n,n.nodeValue)}
+var o=ORG.get(n);n.nodeValue=NEP?o.replace(RE,function(m){return NE[m]}):o}
+function walk2(r){var w=document.createTreeWalker(r,NodeFilter.SHOW_TEXT),n,a=[];while(n=w.nextNode())a.push(n);a.forEach(t1)}
+function phs(){document.querySelectorAll("[placeholder]").forEach(function(e){if(!e.dataset.o)e.dataset.o=e.placeholder;e.placeholder=NEP?e.dataset.o.replace(RE,function(m){return NE[m]}):e.dataset.o})}
+new MutationObserver(function(ms){if(!NEP)return;ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===3)t1(n);else if(n.nodeType===1)walk2(n)})})}).observe(document.body,{childList:true,subtree:true});
+function setLang(x){NEP=x;document.documentElement.lang=x?"ne":"en";walk2(document.body);phs();$("lang").textContent=x?"English":"नेपाली";try{localStorage.setItem("lang",x?"ne":"en")}catch(e){}}
+$("lang").onclick=function(){setLang(!NEP)};
+try{if(localStorage.getItem("lang")==="ne")setLang(true)}catch(e){}
+var TH={night:{"--bg":"#0a1020","--card":"#121b30","--ink":"#e9eefb","--mute":"#9aa9c6","--line":"#25324d","--red":"#ff6b81","--hero":"linear-gradient(180deg,rgba(255,107,129,.16),transparent)","--hf":"'Space Grotesk',sans-serif","--rad":"14px"},
+rhodo:{"--bg":"#fff0f6","--card":"#fff","--ink":"#3a1028","--mute":"#7d4a63","--line":"#f4cfe0","--red":"#be185d","--hero":"linear-gradient(135deg,rgba(190,24,93,.16),rgba(245,158,11,.12))","--hf":"'Fraunces',serif","--rad":"20px"},
+terai:{"--bg":"#eef6ef","--card":"#fbfffb","--ink":"#14301f","--mute":"#4c6b57","--line":"#cfe2d3","--red":"#1f7a4d","--hero":"linear-gradient(180deg,rgba(31,122,77,.16),transparent)","--rad":"10px"},
+phewa:{"--bg":"#e8f5f8","--card":"#fff","--ink":"#0b3a45","--mute":"#3f6a75","--line":"#bfe0e7","--red":"#0f766e","--hero":"linear-gradient(120deg,rgba(15,118,110,.18),rgba(29,78,137,.12))","--hf":"'Space Grotesk',sans-serif","--rad":"16px"},
+flags:{"--bg":"#f5f7ff","--card":"#fff","--ink":"#1b1f3a","--mute":"#565d86","--line":"#d9defa","--red":"#6d28d9","--hero":"linear-gradient(90deg,rgba(29,78,137,.2),rgba(255,255,255,0),rgba(200,16,46,.18),rgba(31,122,77,.2),rgba(224,168,0,.22))","--rad":"8px"},
+mustard:{"--bg":"#fffbe6","--card":"#fff","--ink":"#3b3000","--mute":"#7a6a1f","--line":"#f0e4a3","--red":"#b45309","--hero":"linear-gradient(180deg,rgba(234,179,8,.25),transparent)","--hf":"'Fraunces',serif","--rad":"12px"}};
+var TK=["--bg","--card","--ink","--mute","--line","--red","--hero","--hf","--rad"];
+function theme(k){document.documentElement.removeAttribute("data-theme");var r=document.documentElement.style;TK.forEach(function(x){r.removeProperty(x)});var t=TH[k];if(t)for(var x in t)r.setProperty(x,t[x]);$("mood").value=k;try{localStorage.setItem("theme",k)}catch(e){}}
+$("mood").onchange=function(){theme(this.value)};
+try{var sv=localStorage.getItem("theme");if(sv&&TH[sv])theme(sv)}catch(e){}
+document.addEventListener("keydown",function(e){if(/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;var p=["home","gaps","tools","start","money","learn","plan","about"][+e.key-1];if(p)location.hash="#"+p});
+Object.assign(NE,{"Himalaya":"हिमालय","Everest Night":"सगरमाथा रात","Rhododendron":"लालीगुराँस","Terai Green":"तराई हरियाली","Phewa Lake":"फेवा ताल","Prayer Flags":"लुङ्दर","Mustard Field":"तोरी खेत","Digital payments you can use today":"आजै प्रयोग गर्न सकिने डिजिटल भुक्तानी","Mobile wallets":"मोबाइल वालेट","Mobile banking":"मोबाइल बैंकिङ","Example journeys":"उदाहरण यात्रा","Business calendar":"व्यवसाय पात्रो","Ideas for policymakers":"नीति निर्माताका लागि विचार","One-window registration":"एकद्वार दर्ता","Credit guarantees":"ऋण जमानी","Diaspora bonds":"प्रवासी बण्ड","Export zones":"निर्यात क्षेत्र","Stable tax calendar":"स्थिर कर पात्रो","Simple rural KYC":"ग्रामीण सरल KYC","Do":"गर्नुहोस्","Don't":"नगर्नुहोस्","Tip for PC: press keys 1 to 8 to switch pages, or press Ctrl+K to search.":"पीसीमा: पृष्ठ बदल्न १ देखि ७ कुञ्जी थिच्नुहोस्।","Monthly":"मासिक"});
+RE=new RegExp("(?<![A-Za-z])("+Object.keys(NE).sort(function(a,b){return b.length-a.length}).map(function(k){return k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")(?![A-Za-z])","g");
+Object.assign(NE,{"A bridge from Nepal's business gaps to growth":"नेपालका व्यवसायिक अवरोधबाट वृद्धितर्फको सेतु"});RE=new RegExp("(?<![A-Za-z])("+Object.keys(NE).sort(function(a,b){return b.length-a.length}).map(function(k){return k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")(?![A-Za-z])","g");
+if(NEP)setLang(true);
+document.querySelector("nav .logo").onclick=function(e){e.preventDefault();location.hash="#home";route();window.scrollTo(0,0)};
+function ann(P,r,n){r/=1200;n=Math.max(n,1);return r?P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):P/n}
+$("ivb").onclick=function(){var q=v("ivq"),p=v("ivp"),sub=q*p,vat=$("ivv").value==="1"?sub*.13:0,e=function(i){return $(i).value.replace(/</g,"&lt;")};
+$("ivo").innerHTML="<h3>"+e("ivn")+"</h3><p class='sm'>Invoice INV-"+new Date().toISOString().slice(0,10).replace(/-/g,"")+"<br>Billed to: "+e("ivc")+"</p><div class='row'><span>"+e("ivd")+" x "+q+"</span><span>"+fmt(sub)+"</span></div><div class='tot'><span>Subtotal</span><span>"+fmt(sub)+"</span></div><div class='tot'><span>VAT (13%)</span><span>"+fmt(vat)+"</span></div><div class='tot big'><span>Total due</span><span>"+fmt(sub+vat)+"</span></div>"};
+$("ivp2").onclick=function(){document.body.classList.add("pinv");window.print();setTimeout(function(){document.body.classList.remove("pinv")},500)};
+$("cmb").onclick=function(){var P=v("la"),a=ann(P,v("ar"),v("an")),b=ann(P,v("br"),v("bn2")),ca=a*Math.max(v("an"),1)-P+P*v("af")/100,cb=b*Math.max(v("bn2"),1)-P+P*v("bf2")/100,w=ca<cb?"Loan A":"Loan B",d=Math.abs(ca-cb);
+$("cmo").innerHTML="<div class='tot'><span>Loan A per month</span><b>"+fmt(a)+"</b></div><div class='tot'><span>Loan A total cost</span><b>"+fmt(ca)+"</b></div><div class='tot'><span>Loan B per month</span><b>"+fmt(b)+"</b></div><div class='tot'><span>Loan B total cost</span><b>"+fmt(cb)+"</b></div><p><b>"+(d<1?"Both cost about the same.":w+" is cheaper by "+fmt(d)+" overall.")+"</b></p><p class='sm'>Total cost means interest plus the upfront fee.</p>"};
+var PI=[["Weaknesses and fixes","#gaps","gaps"],["Business tools","#tools","lab"],["Loan readiness scorer","#tools","lab"],["Loan EMI calculator","#tools","lab"],["VAT calculator","#tools","tools2"],["Break-even calculator","#tools","tools2"],["Invoice maker","#tools","inv1"],["Compare two loans","#tools","cmp1"],["Start a business","#start","start"],["Funding finder","#start","start"],["Cash tracker","#money","money1"],["Savings growth","#money","money2"],["Currency converter","#money","money2"],["Glossary and quiz","#learn","learn1"],["One-page business plan","#plan","plan1"],["Home","#home","top"]];
+function cpc(){$("cp").hidden=true}
+function cpr(){var q=$("cpi").value.toLowerCase(),l=$("cpl");l.innerHTML="";PI.filter(function(p){return p[0].toLowerCase().indexOf(q)>-1}).forEach(function(p,i){var a=document.createElement("a");a.href=p[1];a.textContent=p[0];if(!i)a.className="on";a.onclick=function(e){e.preventDefault();cpc();location.hash=p[1];route();var t=$(p[2]);if(t&&p[2]!=="top")t.scrollIntoView()};l.appendChild(a)});if(!l.children.length)l.textContent="No match."}
+function cpo(){$("cp").hidden=false;$("cpi").value="";cpr();$("cpi").focus()}
+$("cpo").onclick=cpo;$("cpi").oninput=cpr;$("cp").onclick=function(e){if(e.target===this)cpc()};
+$("cpi").onkeydown=function(e){if(e.key==="Enter"){var a=$("cpl").querySelector("a");if(a)a.click()}};
+document.addEventListener("keydown",function(e){var ty=/INPUT|SELECT|TEXTAREA/.test(e.target.tagName);if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();cpo()}else if(e.key==="/"&&!ty){e.preventDefault();cpo()}else if(e.key==="Escape")cpc()});
+window.addEventListener("scroll",function(){$("up").hidden=window.scrollY<600});
+$("up").onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};
+Object.assign(NE,{"Search":"खोज्नुहोस्","Invoice maker":"बिल बनाउने","Your business name":"तपाईंको व्यवसायको नाम","Customer name":"ग्राहकको नाम","Item or service":"सामान वा सेवा","Quantity":"परिमाण","Price each (NPR)":"प्रति एकाइ मूल्य (रु.)","Add 13% VAT?":"१३% भ्याट थप्ने?","Create invoice":"बिल बनाउनुहोस्","Your invoice appears here.":"तपाईंको बिल यहाँ देखिन्छ।","Subtotal":"उप-जम्मा","Total due":"तिर्नुपर्ने जम्मा","Billed to:":"ग्राहक:","Compare two loans":"दुई ऋण तुलना","Loan A":"ऋण क","Loan B":"ऋण ख","Rate (%)":"दर (%)","Months":"महिना","Fee (%)":"शुल्क (%)","Compare":"तुलना गर्नुहोस्","Fill in two offers and compare the real cost.":"दुई प्रस्ताव भरेर वास्तविक लागत तुलना गर्नुहोस्।","Search pages and tools":"पृष्ठ र उपकरण खोज्नुहोस्","Weaknesses and fixes":"कमजोरी र समाधान","Loan readiness scorer":"ऋण तयारी स्कोर","VAT calculator":"भ्याट क्याल्कुलेटर","Glossary and quiz":"शब्दकोश र क्विज","One-page business plan":"एक पृष्ठको व्यवसाय योजना"});
+RE=new RegExp("(?<![A-Za-z])("+Object.keys(NE).sort(function(a,b){return b.length-a.length}).map(function(k){return k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")(?![A-Za-z])","g");
+phs();if(NEP)setLang(true);
+$("theme").onclick=function(){var ks=["himalaya","night","rhodo","terai","phewa","flags","mustard"],i=ks.indexOf($("mood").value);theme(ks[(i+1)%ks.length])};
+PI.push(["About us","#about","about1"]);
+$("shb").onclick=function(){var u=location.href.split("#")[0],o=$("sho");try{navigator.clipboard.writeText(u).then(function(){o.textContent="Link copied."},function(){o.textContent=u})}catch(e){o.textContent=u}};
+Object.assign(NE,{"About us":"हाम्रो बारेमा","Our mission":"हाम्रो उद्देश्य","Our vision":"हाम्रो दृष्टि","What we believe":"हामी के विश्वास गर्छौं","What you can do here":"यहाँ तपाईं के गर्न सक्नुहुन्छ","Good to know":"जान्नुपर्ने कुरा","Share ArthaSetu":"अर्थसेतु साझा गर्नुहोस्","Copy site link":"साइटको लिङ्क कपी गर्नुहोस्","Link copied.":"लिङ्क कपी भयो।","Plain language":"सरल भाषा","Practical first":"व्यावहारिक पहिले","Private by design":"गोपनीयता पहिलो","Honest about limits":"सीमाबारे इमानदार","artha = wealth, setu = bridge":"अर्थ = धन, सेतु = पुल","We explain money in simple words, in English and Nepali.":"हामी पैसालाई सरल शब्दमा, अंग्रेजी र नेपालीमा बुझाउँछौं।","Your numbers stay in your browser. Nothing is sent to a server.":"तपाईंका अङ्क ब्राउजरमै रहन्छन्। सर्भरमा केही पठाइँदैन।","ArthaSetu helps Nepali business owners, students and families understand money, spot the weak points in the economy, and take practical steps to start, fund and grow a business.":"अर्थसेतुले नेपाली व्यवसायी, विद्यार्थी र परिवारलाई पैसा बुझ्न, अर्थतन्त्रका कमजोरी चिन्न, र व्यवसाय सुरु, कोष जुटाउने र बढाउने व्यावहारिक कदम चाल्न मद्दत गर्छ।","A Nepal where a good idea in any province can find the knowledge, credit and market it needs.":"कुनै पनि प्रदेशको राम्रो विचारले चाहिने ज्ञान, ऋण र बजार पाउन सक्ने नेपाल।","Tip for PC: press keys 1 to 8 to switch pages, or press Ctrl+K to search.":"पीसीमा: पृष्ठ बदल्न १ देखि ८ कुञ्जी वा खोज्न Ctrl+K थिच्नुहोस्।"});
+RE=new RegExp("(?<![A-Za-z])("+Object.keys(NE).sort(function(a,b){return b.length-a.length}).map(function(k){return k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")(?![A-Za-z])","g");
+route();if(NEP)setLang(true);
+</script>
+</body>
+</html>
